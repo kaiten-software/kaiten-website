@@ -1,0 +1,884 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVantage Solutions - AI Automation & Technology Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',
+                        secondary: '#1E40AF',
+                        accent: '#F59E0B',
+                        success: '#059669'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="font-inter bg-slate-50 text-slate-800">
+
+    <!-- @COMPONENT: Navigation -->
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary">TechVantage</h1>
+                        <span class="text-xs text-slate-600">Solutions</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#services" class="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                        <a href="#process" class="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">How We Work</a>
+                        <a href="#testimonials" class="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Success Stories</a>
+                        <a href="#blog" class="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Insights</a>
+                        <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors font-medium">Coffee with Us</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="text-slate-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+                <div class="lg:col-span-7">
+                    <h1 class="text-4xl md:text-6xl font-bold text-slate-900 leading-tight">
+                        Transform Your Business with 
+                        <span class="text-primary">AI Automation</span> & 
+                        <span class="text-accent">Smart Technology</span>
+                    </h1>
+                    <p class="mt-6 text-xl text-slate-600 leading-relaxed">
+                        We help SMBs and startups implement cutting-edge AI automation, ERP systems, blockchain solutions, and rapid MVP development. End-to-end technology transformation, not just development.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-lg hover:bg-secondary transition-colors font-semibold text-lg shadow-lg">
+                            Start Your Digital Transformation
+                        </a>
+                        <a href="#services" class="border-2 border-primary text-primary px-8 py-4 rounded-lg hover:bg-primary hover:text-white transition-colors font-semibold text-lg">
+                            Explore Our Services
+                        </a>
+                    </div>
+                    <div class="mt-8 grid grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">150+</div>
+                            <div class="text-sm text-slate-600">Projects Delivered</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-success">98%</div>
+                            <div class="text-sm text-slate-600">Client Satisfaction</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent">24/7</div>
+                            <div class="text-sm text-slate-600">Support Available</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0 lg:col-span-5">
+                    <!-- Modern tech consulting team collaboration -->
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Technology consulting team collaborating on AI solutions" 
+                         class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Services Overview -->
+    <!-- Services Overview -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900">Our Technology Expertise</h2>
+                <p class="mt-4 text-xl text-slate-600 max-w-3xl mx-auto">
+                    We deliver comprehensive technology solutions that transform businesses and accelerate growth. No websites or mobile apps - just powerful business technology.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI Automation -->
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow border border-slate-200">
+                    <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">AI Automation</h3>
+                    <p class="text-slate-600 mb-6">
+                        Implement intelligent automation workflows that reduce manual tasks by 80% and increase operational efficiency.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                        <li><i class="fas fa-check text-success mr-2"></i>Process Automation</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Predictive Analytics</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Machine Learning Integration</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Chatbot Development</li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-semibold hover:text-secondary transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- ERP Systems -->
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow border border-slate-200">
+                    <div class="w-16 h-16 bg-secondary rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">ERP Solutions</h3>
+                    <p class="text-slate-600 mb-6">
+                        Streamline your entire business operation with custom ERP implementations tailored to your industry.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                        <li><i class="fas fa-check text-success mr-2"></i>Resource Planning</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Inventory Management</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Financial Integration</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Reporting Dashboards</li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-semibold hover:text-secondary transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Blockchain Solutions -->
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow border border-slate-200">
+                    <div class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-link text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">Blockchain Integration</h3>
+                    <p class="text-slate-600 mb-6">
+                        Secure your data and transactions with blockchain technology implementations for enhanced trust and transparency.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                        <li><i class="fas fa-check text-success mr-2"></i>Smart Contracts</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Supply Chain Tracking</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Digital Identity</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Cryptocurrency Integration</li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-semibold hover:text-secondary transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Salesforce Solutions -->
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow border border-slate-200">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">Salesforce Optimization</h3>
+                    <p class="text-slate-600 mb-6">
+                        Maximize your CRM potential with custom Salesforce implementations and advanced automation workflows.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                        <li><i class="fas fa-check text-success mr-2"></i>CRM Customization</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Sales Automation</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Integration Setup</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Data Migration</li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-semibold hover:text-secondary transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- IoT Solutions -->
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow border border-slate-200">
+                    <div class="w-16 h-16 bg-green-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-microchip text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">IoT Development</h3>
+                    <p class="text-slate-600 mb-6">
+                        Design and prototype smart IoT devices that connect your business operations to the digital world.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                        <li><i class="fas fa-check text-success mr-2"></i>Device Prototyping</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Sensor Integration</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Data Analytics</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Cloud Connectivity</li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-semibold hover:text-secondary transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Startup MVP & AR/VR -->
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow border border-slate-200">
+                    <div class="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">MVP & AR/VR</h3>
+                    <p class="text-slate-600 mb-6">
+                        Rapid prototyping and MVP development for startups, including cutting-edge AR/VR experiences.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                        <li><i class="fas fa-check text-success mr-2"></i>Fast Prototyping</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>AR/VR Development</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Market Validation</li>
+                        <li><i class="fas fa-check text-success mr-2"></i>Investor Ready Solutions</li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-semibold hover:text-secondary transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services Overview -->
+
+    <!-- @COMPONENT: Process Section -->
+    <!-- How We Work -->
+    <section id="process" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900">How We Deliver Results</h2>
+                <p class="mt-4 text-xl text-slate-600 max-w-3xl mx-auto">
+                    Our proven methodology ensures successful technology implementations that drive real business outcomes.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">Discovery & Analysis</h3>
+                    <p class="text-slate-600">
+                        We analyze your current processes, identify inefficiencies, and map out transformation opportunities.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">Strategy Development</h3>
+                    <p class="text-slate-600">
+                        Create a comprehensive technology roadmap aligned with your business goals and budget constraints.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">Implementation</h3>
+                    <p class="text-slate-600">
+                        Execute the solution with minimal disruption to your operations, ensuring smooth transition and adoption.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-success rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">4</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">Optimization & Support</h3>
+                    <p class="text-slate-600">
+                        Continuous monitoring, optimization, and support to ensure maximum ROI and long-term success.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-white rounded-2xl p-8 shadow-lg">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-slate-900 mb-6">What Makes Us Different</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-success text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900">End-to-End Solutions</h4>
+                                    <p class="text-slate-600">We don't build websites or mobile apps. We focus on business technology that drives real operational improvements.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-success text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900">SMB & Startup Focused</h4>
+                                    <p class="text-slate-600">Specialized expertise in helping smaller businesses access enterprise-level technology solutions.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-success text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900">Rapid Implementation</h4>
+                                    <p class="text-slate-600">Fast prototyping and implementation cycles that get you to market quickly with validated solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 lg:mt-0">
+                        <!-- Advanced technology dashboard interface -->
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                             alt="Advanced technology dashboard showing business automation metrics" 
+                             class="rounded-xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Process Section -->
+
+    <!-- @COMPONENT: Testimonials -->
+    <!-- Client Success Stories -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900">Client Success Stories</h2>
+                <p class="mt-4 text-xl text-slate-600">
+                    See how we've transformed businesses with cutting-edge technology solutions
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-50 rounded-xl p-8 border border-slate-200">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 mb-6 italic">
+                        "Their AI automation solution reduced our processing time by 75% and eliminated human errors completely. ROI was achieved within 4 months."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-semibold">MK</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-900">Michael Kumar</h4>
+                            <p class="text-slate-600 text-sm">Operations Director, LogiFlow Systems</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-8 border border-slate-200">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 mb-6 italic">
+                        "The ERP implementation transformed our entire operation. We now have real-time visibility across all departments and improved efficiency by 60%."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-semibold">SP</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-900">Sarah Parker</h4>
+                            <p class="text-slate-600 text-sm">CEO, GreenTech Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-8 border border-slate-200">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 mb-6 italic">
+                        "From concept to working MVP in just 8 weeks. Their rapid prototyping approach helped us secure Series A funding."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-semibold">RD</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-900">Raj Desai</h4>
+                            <p class="text-slate-600 text-sm">Founder, FinTech Innovations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="text-4xl font-bold text-primary mb-2">150+</div>
+                        <div class="text-slate-600">Projects Completed</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-success mb-2">98%</div>
+                        <div class="text-slate-600">Client Satisfaction</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-accent mb-2">40%</div>
+                        <div class="text-slate-600">Average Efficiency Gain</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-secondary mb-2">6 Months</div>
+                        <div class="text-slate-600">Average ROI Timeline</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Testimonials -->
+
+    <!-- @COMPONENT: Blog Preview -->
+    <!-- Latest Insights -->
+    <section id="blog" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900">Latest Insights</h2>
+                <p class="mt-4 text-xl text-slate-600">
+                    Stay ahead with our expert analysis on AI automation and business technology trends
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- Modern AI technology workspace -->
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Modern AI technology workspace with machine learning algorithms" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-primary text-sm font-semibold mb-2">AI AUTOMATION</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">How AI Automation is Revolutionizing SMB Operations</h3>
+                        <p class="text-slate-600 mb-4">
+                            Discover the top 5 AI automation strategies that small and medium businesses are using to compete with enterprise-level efficiency.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-500 text-sm">Dec 15, 2024</span>
+                            <a href="#" class="text-primary font-semibold hover:text-secondary transition-colors">
+                                Read More <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- ERP dashboard and analytics -->
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="ERP dashboard displaying business analytics and performance metrics" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-secondary text-sm font-semibold mb-2">ERP SYSTEMS</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">ERP Implementation Best Practices for Growing Companies</h3>
+                        <p class="text-slate-600 mb-4">
+                            Learn from real case studies how to successfully implement ERP systems without disrupting your current operations.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-500 text-sm">Dec 10, 2024</span>
+                            <a href="#" class="text-primary font-semibold hover:text-secondary transition-colors">
+                                Read More <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- Startup team working on MVP -->
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
+                         alt="Startup team collaborating on MVP development and product strategy" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-accent text-sm font-semibold mb-2">STARTUP MVPS</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">From Idea to Funded MVP in 90 Days</h3>
+                        <p class="text-slate-600 mb-4">
+                            A step-by-step guide to rapid MVP development that attracts investors and validates your market assumptions.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-500 text-sm">Dec 5, 2024</span>
+                            <a href="#" class="text-primary font-semibold hover:text-secondary transition-colors">
+                                Read More <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="bg-primary text-white px-8 py-3 rounded-lg hover:bg-secondary transition-colors font-semibold">
+                    View All Articles
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Blog Preview -->
+
+    <!-- @COMPONENT: FAQ Section -->
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900">Frequently Asked Questions</h2>
+                <p class="mt-4 text-xl text-slate-600">
+                    Common questions about our technology solutions and implementation process
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-slate-50 rounded-lg border border-slate-200">
+                    <button class="w-full text-left p-6 focus:outline-none" data-event="click:toggleFAQ">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-slate-900">What types of businesses do you work with?</h3>
+                            <i class="fas fa-chevron-down text-slate-400"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6">
+                        <p class="text-slate-600">
+                            We specialize in small to medium businesses (SMBs) and startups across various industries including manufacturing, retail, healthcare, finance, and technology. Our solutions are designed to give smaller companies access to enterprise-level technology capabilities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-lg border border-slate-200">
+                    <button class="w-full text-left p-6 focus:outline-none" data-event="click:toggleFAQ">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-slate-900">Do you build websites or mobile applications?</h3>
+                            <i class="fas fa-chevron-down text-slate-400"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6">
+                        <p class="text-slate-600">
+                            No, we specifically focus on business technology solutions like AI automation, ERP systems, blockchain integration, IoT development, and Salesforce optimization. We provide end-to-end technology solutions that transform business operations, not consumer-facing websites or mobile apps.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-lg border border-slate-200">
+                    <button class="w-full text-left p-6 focus:outline-none" data-event="click:toggleFAQ">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-slate-900">How long does a typical implementation take?</h3>
+                            <i class="fas fa-chevron-down text-slate-400"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6">
+                        <p class="text-slate-600">
+                            Implementation timelines vary by project complexity. Simple automation workflows can be completed in 2-4 weeks, while comprehensive ERP implementations typically take 3-6 months. MVP development for startups usually takes 6-12 weeks. We provide detailed timelines during our initial consultation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-lg border border-slate-200">
+                    <button class="w-full text-left p-6 focus:outline-none" data-event="click:toggleFAQ">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-slate-900">What is your approach to AI automation?</h3>
+                            <i class="fas fa-chevron-down text-slate-400"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6">
+                        <p class="text-slate-600">
+                            We start by analyzing your current processes to identify automation opportunities. Then we implement AI solutions using proven technologies like machine learning, natural language processing, and predictive analytics. Our focus is on measurable business outcomes like cost reduction, efficiency gains, and error elimination.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-lg border border-slate-200">
+                    <button class="w-full text-left p-6 focus:outline-none" data-event="click:toggleFAQ">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-slate-900">Do you provide ongoing support and maintenance?</h3>
+                            <i class="fas fa-chevron-down text-slate-400"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6">
+                        <p class="text-slate-600">
+                            Yes, we offer comprehensive support packages including 24/7 monitoring, regular updates, performance optimization, and technical support. Our goal is to ensure your technology solutions continue delivering value and adapting to your evolving business needs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-lg border border-slate-200">
+                    <button class="w-full text-left p-6 focus:outline-none" data-event="click:toggleFAQ">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-slate-900">How do you ensure ROI on technology investments?</h3>
+                            <i class="fas fa-chevron-down text-slate-400"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6">
+                        <p class="text-slate-600">
+                            We establish clear KPIs and success metrics before implementation begins. Our solutions typically deliver ROI within 3-6 months through cost savings, efficiency improvements, and revenue growth. We provide regular reporting and optimization to maximize your technology investment returns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: FAQ Section -->
+
+    <!-- @COMPONENT: Contact Section -->
+    <!-- Coffee with Us - Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-primary to-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="text-white mb-12 lg:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Business?</h2>
+                    <p class="text-xl text-blue-100 mb-8">
+                        Let's discuss how our AI automation and technology solutions can drive your business growth. Schedule a consultation to explore possibilities.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Call Us</div>
+                                <div class="text-blue-100">+1 (555) 123-4567</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Email Us</div>
+                                <div class="text-blue-100">hello@techvantagesolutions.com</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Response Time</div>
+                                <div class="text-blue-100">Within 2 business hours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-2xl">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Start Your Digital Transformation</h3>
+                    
+                    <form class="space-y-6" data-implementation="Form should submit to contact processing endpoint">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">First Name *</label>
+                                <input type="text" data-bind="form.firstName" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Last Name *</label>
+                                <input type="text" data-bind="form.lastName" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Business Email *</label>
+                            <input type="email" data-bind="form.email" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@company.com" required>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Company Name *</label>
+                            <input type="text" data-bind="form.company" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your Company" required>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Phone Number</label>
+                            <input type="tel" data-bind="form.phone" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="+1 (555) 123-4567">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Which solutions interest you? *</label>
+                            <select data-bind="form.service" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                                <option value="">Select a service</option>
+                                <option value="ai-automation">AI Automation</option>
+                                <option value="erp-systems">ERP Systems</option>
+                                <option value="blockchain">Blockchain Integration</option>
+                                <option value="salesforce">Salesforce Optimization</option>
+                                <option value="iot">IoT Development</option>
+                                <option value="mvp">Startup MVP & AR/VR</option>
+                                <option value="multiple">Multiple Services</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Current Business Challenge</label>
+                            <textarea data-bind="form.challenge" rows="4" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Describe your main business challenge or goal..."></textarea>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Project Timeline</label>
+                            <select data-bind="form.timeline" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Select timeline</option>
+                                <option value="asap">ASAP (Rush project)</option>
+                                <option value="1-3-months">1-3 months</option>
+                                <option value="3-6-months">3-6 months</option>
+                                <option value="6-plus-months">6+ months</option>
+                                <option value="planning">Still planning</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Estimated Budget Range</label>
+                            <select data-bind="form.budget" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Select budget range</option>
+                                <option value="under-25k">Under $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="100k-250k">$100,000 - $250,000</option>
+                                <option value="over-250k">Over $250,000</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" data-event="click:handleContactSubmit" class="w-full bg-primary text-white py-4 rounded-lg hover:bg-secondary transition-colors font-semibold text-lg shadow-lg">
+                            Schedule Your Coffee Chat ☕
+                        </button>
+                        
+                        <p class="text-sm text-slate-600 text-center">
+                            We'll respond within 2 business hours to schedule your consultation.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">TechVantage Solutions</h3>
+                    <p class="text-slate-300 mb-6">
+                        Transforming businesses through AI automation, ERP systems, and cutting-edge technology solutions for SMBs and startups.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-secondary transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-secondary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-secondary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="#" class="hover:text-white transition-colors">AI Automation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">ERP Systems</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blockchain Integration</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Salesforce Optimization</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">IoT Development</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Startup MVP & AR/VR</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-slate-300">
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Our Process</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Get in Touch</h4>
+                    <div class="space-y-3 text-slate-300">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>hello@techvantagesolutions.com</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            <span>123 Innovation Drive<br>Tech Valley, CA 94025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-slate-400">© 2024 TechVantage Solutions. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        (function() {
+            // TODO: Implement smooth scrolling navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // TODO: Implement FAQ toggle functionality
+            document.querySelectorAll('[data-event="click:toggleFAQ"]').forEach(button => {
+                button.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    if (content.style.display === 'none' || !content.style.display) {
+                        content.style.display = 'block';
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    } else {
+                        content.style.display = 'none';
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+
+            // TODO: Implement contact form submission handler
+            document.querySelector('[data-event="click:handleContactSubmit"]')?.addEventListener('click', function(e) {
+                e.preventDefault();
+                // TODO: Add form validation and submission logic
+                console.log('Contact form submitted - implement proper form handling');
+            });
+
+            // TODO: Implement mobile menu toggle
+            document.querySelector('.md\\:hidden button')?.addEventListener('click', function() {
+                // TODO: Add mobile menu toggle functionality
+                console.log('Mobile menu toggle - implement mobile navigation');
+            });
+        })();
+    </script>
+</body>
+</html>
