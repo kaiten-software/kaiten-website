@@ -197,9 +197,9 @@ export default function Services() {
             <Button asChild className="bg-white text-primary hover:bg-slate-100">
               <Link href="/contact">Schedule Free Consultation</Link>
             </Button>
-            <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-primary bg-white/10 backdrop-blur-sm">
+            {/* <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-primary bg-white/10 backdrop-blur-sm">
               <Link href="/case-studies">View Success Stories</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>

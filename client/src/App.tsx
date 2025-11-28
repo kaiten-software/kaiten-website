@@ -20,7 +20,7 @@ import Contact from "@/pages/contact";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsOfService from "@/pages/terms-of-service";
 import CookiePolicy from "@/pages/cookie-policy";
-import CaseStudies from "@/pages/case-studies";
+// import CaseStudies from "@/pages/case-studies";
 import Facebook from "@/pages/facebook";
 import Instagram from "@/pages/instagram";
 import YouTube from "@/pages/youtube";
@@ -43,7 +43,7 @@ function Router() {
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms-of-service" component={TermsOfService} />
       <Route path="/cookie-policy" component={CookiePolicy} />
-      <Route path="/case-studies" component={CaseStudies} />
+      {/* <Route path="/case-studies" component={CaseStudies} /> */}
       <Route path="/facebook" component={Facebook} />
       <Route path="/instagram" component={Instagram} />
       <Route path="/youtube" component={YouTube} />
